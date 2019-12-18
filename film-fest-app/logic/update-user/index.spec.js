@@ -33,9 +33,7 @@ describe('UpdateUser test', () => {
         email = `email-${Math.random()}@mail.com`
         password = `password-${Math.random()}`
         passwordConfimation = password
-        debugger
         updateUser(name, surname, email, password, passwordConfimation, id, token, (error, result) => {
-            debugger
             expect(error).toBeUndefined()
             done()
         })

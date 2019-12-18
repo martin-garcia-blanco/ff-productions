@@ -25,8 +25,6 @@ function PersonalArea({ onPersonalArea, onSave, onSignOut, user, error }) {
             <button className="personal-area__submit" onClick={event => {
                 event.preventDefault()
                 let items = document.getElementsByClassName("personal-area__field");
-                console.log(items)
-                debugger
                 const name = items[0].value
                 const surname = items[1].value
                 const email = items[2].value

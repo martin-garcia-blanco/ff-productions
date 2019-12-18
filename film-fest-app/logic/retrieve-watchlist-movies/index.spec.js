@@ -16,7 +16,6 @@ describe('retrieveWatchList test', () => {
 
     beforeEach(done => {
         call('POST', undefined, 'https://skylabcoders.herokuapp.com/api/auth', { username: email, password }, result => {
-            debugger
             id = result.data.id
             token = result.data.token
             done()
@@ -25,7 +24,6 @@ describe('retrieveWatchList test', () => {
 
     it('Should succeed on correct specs', (done) => {
         retrieveWatchlistMovies(id, token, (error, movies) => {
-            console.log(movies)
             expect(error).toBeUndefined()
             expect(movies instanceof Array).toBeTruthy()
             movies.forEach(element => {
@@ -67,22 +65,15 @@ describe('retrieveWatchList test', () => {
         email = `email-${Math.random()}@mail.com`
         password = `password-${Math.random()}`
         passwordConfimation = password
-        debugger
-
 
         call('POST', undefined, 'https://skylabcoders.herokuapp.com/api/user', { name, surname, username: email, password, favs: [] }, result => {
 
             done()
         })
-        debugger
-
-
     })
 
     beforeEach(done => {
-
         call('POST', undefined, 'https://skylabcoders.herokuapp.com/api/auth', { username: email, password }, result => {
-            debugger
             id = result.data.id
             token = result.data.token
             done()
@@ -92,7 +83,6 @@ describe('retrieveWatchList test', () => {
 
     it('Should succeed on correct specs', (done) => {
         retrieveWatchlistMovies(id, token, (error, movies) => {
-            console.log(movies)
             expect(error).toBeUndefined()
             expect(movies instanceof Array).toBeTruthy()
             done()

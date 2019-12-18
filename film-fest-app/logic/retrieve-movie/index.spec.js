@@ -45,16 +45,8 @@ describe('logic - retrieve movie', () => {
 
             expect(error).toBeUndefined()
             expect(result).toBeDefined()
-                //expect(result.results instanceof Array).toBeTruthy()
-            debugger
-
             expect(result.poster).toBe("https://image.tmdb.org/t/p/original/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg")
             expect(result.title).toBe("Joker")
-
-            // expect(typeof element.poster_path === 'string').toBeTruthy()
-            // expect(typeof element.title === 'string').toBeTruthy()
-
-
             done()
         })
 
