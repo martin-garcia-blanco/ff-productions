@@ -1,0 +1,104 @@
+@import ../../config
+
+i
+    font-size: 1rem
+
+header
+    height: 23vh
+    margin: 0 1rem 0 1rem
+
+.bar-icon
+    background-size: cover
+    width: 90%
+    transition: width 1s
+.bar-icon:hover
+    cursor: pointer
+.search-bar__logo
+    height: 15vh
+.main-bar
+    width: 100vw
+    height: 10vh
+    display: grid
+    grid-template-columns: repeat(4, 25vw)
+    grid-template-rows: 15vh 5vh
+    &__logo
+        grid-area: 1 / 1 / 2 / 2
+        height: 15vh
+        width: 16vh
+    &__search
+        grid-area: 1 / 2 / 2 / 4
+        display: flex
+        flex-wrap: nowrap
+        align-items: center
+        margin: 0
+
+        .search-bar__search
+            padding: 0.6rem
+            margin-left: 0.5 rem
+            margin-right: -3rem
+            background-color: $color2
+            border: solid thin $color2
+            color: $colorFont
+            border-radius: 1rem
+            width: 100vw
+    &__login
+        grid-area: 1 / 4 / 2 / 5
+        font-size: 3.3rem
+        display: flex
+        justify-content: center
+        align-items: center
+    &__login:hover
+        cursor: pointer
+    &__home
+        grid-area: 2 / 1 / 3 / 2
+
+    &__genre
+        grid-area: 2 / 2 / 3 / 3
+
+    &__watch-list
+        grid-area: 2 / 3 / 3 / 4
+
+    &__surprise-me
+        grid-area: 2 / 4 / 3 / 5
+
+.header-button
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-right: 0.5rem
+    padding: 1rem
+    font-weight: bolder
+    border-radius: 1rem
+    font-size: 1rem
+
+.header-button:hover
+    color: $color4
+    cursor: pointer
+    font-weight: bolder
+    background-color: $color2
+
+.search-buton
+    background-color: $color2
+    border: none
+    color: $colorFont
+
+.search-bar
+    margin-left: 5vw
+
+.main-bar__drop-down-list
+    display: none
+    z-index: 1
+    position: absolute
+    top: 4vh
+    background-color: $color2
+    border-radius:1rem 1rem 1rem 1rem
+    font-size: .8rem
+.main-bar__genre
+    position: relative
+
+
+.main-bar__genre:hover  .main-bar__drop-down-list 
+    display: block
+
+.main-bar__drop-down-list
+    padding: 1rem

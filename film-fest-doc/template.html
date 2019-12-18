@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FilmFest</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../film-fest-design/styles/index.css">
+
+</head>
+
+<body>
+
+    <header id="top">
+        <nav class="main-bar">
+            <img class="main-bar__logo bar-icon" src="../film-fest-design/img/logo.png" alt="Logo"></img>
+            <form class="main-bar__search search-bar">
+                <input type="search" class="search-bar__search" name="search"></input>
+                <i class="search-bar__icon  bar-icon material-icons" alt="search icon">search</i>
+            </form>
+
+            <i class="main-bar__login material-icons" alt="logIn icon">account_circle</i>
+
+            <p class="main-bar__home header-button">HOME</p>
+
+            <p class="main-bar__genre header-button">GENRE</p>
+
+            <p class="main-bar__watch-list header-button">LISTS</p>
+
+            <p class="main-bar__surprise-me header-button">RANDOM</p>
+        </nav>
+    </header>
+
+    <main>
+        <section class="view register ">
+            <form>
+                <ul>
+                    <li><span>
+                            <h1 class="register__title">Register</h1>
+                            <span></li>
+
+                    <li><span>
+                            <input class="register__field" type="text" name="name" placeholder="name"></input>
+                            <span></li>
+
+                    <li><span>
+                            <input class="register__field" type="text" name="surname" placeholder="surname"></input>
+                            <span></li>
+
+                    <li><span>
+                            <input class="register__field" type="email" name="email" placeholder="e-mail"></input>
+                            <span></li>
+
+                    <li><span>
+                            <input class="register__field" type="password" name="password"
+                                placeholder="password"></input>
+                            <span></li>
+
+                    <li><span>
+                            <input class="register__field" type="password" name="password-confirmation"
+                                placeholder="password"></input>
+                            <span></li>
+                    <li><span>
+                            <button class="register__submit">SIGN IN</button>
+                            <span></li>
+                    <li><span>
+                            <button class="register__submit">LOGIN!</button>
+                            <span></li>
+                   
+               
+
+
+                </ul>
+            </form>
+
+            <section class="feedback">
+                <p class="feedback__message">I am the register feedback</p>
+            </section>
+        </section>
+
+        <section class="view login ">
+            <form>
+                <h1 class="login__title">Login</h1>
+                <input class="login__field" type="email" name="email" placeholder="e-mail">
+                <input class="login__field" type="password" name="password" placeholder="password">
+                <div>
+                <button class="login__submit">ENTER</button>
+                <button class="login__submit">REGISTER!</button>
+            </div>
+            </form>
+
+            <section class="feedback">
+                <p class="feedback__message">Im a feedback message into a component</p>
+            </section>
+        </section>
+
+        <section class="view personal-area">
+            <form>
+                <ul>
+                    <li><span>
+                        <h1 class="personal-area__title">Personal Area</h1>
+                    </span></li>
+
+                    <li><span>
+                        <p>Name:</p>
+                         <input class="personal-area__field" type="text" name="name" placeholder="name" disabled></input>
+                    </span></li>
+
+                    <li><span>
+                        <p>Surname:</p>
+                         <input class="personal-area__field" type="text" name="surname" placeholder="surname" disabled></input>
+                    </span></li>
+
+                    <li><span>
+                        <p>Email:</p>
+                         <input class="personal-area__field" type="email" name="email" placeholder="e-mail" disabled></input>
+                    </span></li>                  
+
+                    <li><span>
+                        <p>Password:</p> 
+                         <input class="personal-area__field" type="password" name="password" placeholder="password" disabled></input>
+                    </span></li>
+
+
+                    <li><span>
+                        <p>Password confirmation:</p>
+                        <input class="personal-area__field" type="password" name="password-confirmation" placeholder="password confirmation" disabled></input>
+                    </span></li>
+
+                    <li><span>
+                        <button class="personal-area__submit">SAVE</button>                           
+                    <span></li>
+                    
+                    <li><span>
+                        
+                        <button class="personal-area__submit">CONFIRM</button>                               
+                    <span></li>
+                </ul>
+            </form>
+        </section>
+
+
+        <section class="landing">
+            <h1 class="landing__title">Last movies</h1>
+            <ul class="landing__results results">
+                <li class="results__item movie">
+                    <img class="movie__image" src="https://fakeimg.pl/300x200/?text=Hello">
+                    <h2 class="movie__title">This is a Super Section</h2>
+                </li>
+
+                <li class="results__item movie">
+                    <img class="movie__image" src="https://fakeimg.pl/300x200/?text=Hello">
+                    <h2 class="movie__title">This is a Super Section</h2>
+                </li>
+
+                <li class="results__item movie">
+                    <img class="movie__image" src="https://fakeimg.pl/300x200/?text=Hello">
+                    <h2 class="movie__title">This is a Super Section</h2>
+                </li>
+
+                <li class="results__item movie">
+                    <img class="movie__image" src="https://fakeimg.pl/300x200/?text=Hello">
+                    <h2 class="movie__title">This is a Super Section</h2>
+                </li>
+
+                <li class="results__item movie">
+                    <img class="movie__image" src="https://fakeimg.pl/300x200/?text=Hello">
+                    <h2 class="movie__title">This is a Super Section</h2>
+                </li>
+
+                <li class="results__item movie">
+                    <img class="movie__image" src="https://fakeimg.pl/300x200/?text=Hello">
+                    <h2 class="movie__title">This is a Super Section</h2>
+                </li>
+
+
+            </ul>
+        </section>
+
+        <section class="view specs">
+            <img class="specs__image" src="https://fakeimg.pl/500x300/?text=Hello">
+            <h2 class="specs__title">Movie</h2>
+            <div class="watchlist">
+
+                <p class="watchlist__title">Add to Watchlist</p>
+                <img class="watchlist__watch_icon" src="../film-fest-design/img/plus32px.png" id="watchlist"
+                    alt="add to Watchlist" onclick="change();" />
+
+            </div>
+            <p class="specs__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque omnis
+                sunt dolor repellat incidunt voluptates odio eos consequatur corrupti. Accusantium porro minima
+                molestias voluptatem dolor nobis! Perspiciatis, vero maiores!</p>
+            <p class="specs__genre">Science fiction</p>
+            <p class="specs__runtime"> 139minin </p>
+            <p class="specs__rating__vote_average">8,4</p>
+            <p class="desc">State your score</p>
+
+            <div class="specs__rating rating">
+                <div class="Stars" style="--rating: 5;" aria-label="Rating of this product is 5 out of 5.">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="global-feedback feedback">
+            <p class="feedback__message">Im a global feedback message.</p>
+        </section>
+    </main>
+
+    <footer class="bottom">
+        <nav class="footer-nav">
+            <div class="footer-nav__go-up go-up">
+                <button class="go-up__button">Go up!!</button>
+            </div>
+            <div class="footer-nav__social-media social-media">
+                <img class="social-media__icon" src="../film-fest-design/img/facebook.png" alt="facebook" /></img>
+                <img class="social-media__icon" src="../film-fest-design/img/instagram.png" alt="instagram"></img>
+                <img class="social-media__icon" src="../film-fest-design/img/twitter.png" alt="twitter"></img>
+                <img class="social-media__icon" src="../film-fest-design/img/youtube.png" alt="youtube"></img>
+            </div>
+            <div class="footer-nav copyright">
+                <p> © Copyright 2019, FF Productions, Inc. o afiliados. </p>
+            </div>
+        </nav>
+    </footer>
+
+</html

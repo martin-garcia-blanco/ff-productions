@@ -1,0 +1,45 @@
+
+@import config
+
+.landing
+    display: flex
+    flex-direction: column
+
+    &__title
+        font-size: 3rem
+        font-weight: normal
+        color: $color4
+        background-color: $color1
+        padding: 1rem 3rem 1rem 3rem
+        border-radius: 1rem
+
+    .results
+        display: flex
+        padding: 0
+        flex-direction: row
+        flex-wrap: wrap
+        
+
+    
+        .movie
+            width: 25vh
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: $color2
+            &__image
+                width: 25vh
+                background-size: cover
+                margin: 0
+            &__title
+                text-align: center
+                width: 100%
+                font-size: 0.9rem
+                padding: 0.1rem
+                color: $colorFont
+            &__title:hover
+                border-radius: 3rem
+                background-color: $color2
+                color: $color4
+

@@ -1,0 +1,101 @@
+@import ../../config
+
+:root
+  --star-size: 60px
+  --star-color: #fff
+  --star-background: #fc0
+
+*
+    box-sizing: border-box
+    
+.specs
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $color1
+    border-radius: 1rem
+    text-decoration: none
+    padding: .5rem
+    font-family: roboto
+    font-size: 16px
+    color: $colorFont
+    margin: .5rem auto .5rem auto
+
+    &__image
+        width: 22.5rem
+        float: left
+
+    &__title
+        color: $color4
+        font-size: 2rem
+        margin: .5rem auto .5rem auto
+
+    &__watchlist__title
+        color: $color4
+        font-size: 1.5rem
+        color: $color4
+
+    &__description  
+        padding: 40px
+        color: $colorFont
+        overflow: hidden
+
+    &__genre
+        color: $colorFont
+        flex: start
+        
+    &__runtime
+        color: $colorFont
+        flex: start
+
+.h2
+    font-family: Staatliches
+
+.Stars
+  --percent: calc(var(--rating) / 5 * 100%)
+  
+  display: inline-block
+  font-size: var(--star-size)
+  font-family: Times
+  line-height: 1
+  
+  &::before 
+    content: '★★★★★'
+    letter-spacing: 3px
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent))
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    
+.body 
+  background: #eee
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+.desc
+  font-family: Roboto
+  font-size: 16px
+  position: relative
+
+.watchlist
+    display: flex
+    margin: 1rem 3rem
+    margin-bottom: 0rem
+    flex-direction: row
+    align-items: center
+    align-content: baseline
+    justify-content: space-evenly
+    text-decoration: none
+    padding: .5rem
+    font-family: roboto
+    font-size: 16px
+    color: $colorFont
+    margin:  auto .5rem auto .5rem 
+
+.watchlist__watch_icon
+     margin:  auto .5rem auto .5rem  
+
+   
+
+
