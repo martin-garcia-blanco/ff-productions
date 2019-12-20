@@ -1,7 +1,7 @@
 function Header({ onGoHome, onGoWatchlist, onGoPersonalArea, onGenres, onGetMoviesByGenre, onSearchMovies, onGoRandomMovies }) {
     return <header id="top">
         <nav className="main-bar">
-            <img className="main-bar__logo bar-icon" src="../film-fest-design/img/logo.png" alt="Logo" onClick={event => {
+            <img className="main-bar__logo bar-icon" src="./public/img/logo.png" alt="Logo" onClick={event => {
                 event.preventDefault()
                 onGoHome()
             }}></img>
