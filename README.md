@@ -4,6 +4,8 @@
 
 Film Fest app aims to offer to their userbase a realiable source of information about films and how the public is evaluating them, granting always updated info to them.
 
+## Link to the project (mobile version): https://ff-productions.herokuapp.com
+
 # Features
 ![Features](film-fest-doc/images/screenshots/landing.png)
 
