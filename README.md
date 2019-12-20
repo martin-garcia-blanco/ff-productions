@@ -6,6 +6,11 @@ Film Fest app aims to offer to their userbase a realiable source of information 
 
 ## Link to the project (mobile version): https://ff-productions.herokuapp.com
 
+## Collaborators
+- Nacho Rivero https://github.com/rivannadev
+- Cristian Astudillo https://github.com/astudillo82
+- Me (Martin Garcia) https://github.com/martin-garcia-blanco
+
 # Features
 ![Features](film-fest-doc/images/screenshots/landing.png)
 
